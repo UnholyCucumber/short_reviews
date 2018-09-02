@@ -1,0 +1,50 @@
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag @film.image %>
+      </div>
+        <div class="col-md-7 col-md-offset-1">
+
+          <div class="table-responsive">
+            <table class="table">
+
+              <tbody>
+                <tr>
+                  <td><strong>Title:</strong></td>
+                  <td><%= @film.title %></td>
+                </tr>
+                <tr>
+                  <td><strong>Director:</strong></td>
+                  <td><%= @film.director %></td>
+                </tr>
+                <tr>
+                  <td><strong>Genre:</strong></td>
+                  <td><%= @film.genre %></td>
+                </tr>
+                <tr>
+                  <td><strong>Year:</strong></td>
+                  <td><%= @film.year %></td>
+                </tr>
+                <tr>
+                  <td><strong>Cast:</strong></td>
+                  <td><%= @film.cast %></td>
+                </tr>
+                <tr>
+                  <td><strong>Language Watched:</strong></td>
+                  <td><%= @film.language %></td>
+                </tr>
+                <tr>
+                  <td><strong>Rating:</strong></td>
+                  <td><%= @film.rating %></td>
+                </tr>
+                <tr>
+                  <td><strong>Review:</strong></td>
+                  <td><%= sanitize @film.review %></td>
+                </tr>
+              </tbody>
+            </div>
+      </div>
+    </div>
+  </div>

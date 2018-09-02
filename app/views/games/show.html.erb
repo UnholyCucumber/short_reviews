@@ -1,0 +1,50 @@
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag @game.image %>
+      </div>
+        <div class="col-md-7 col-md-offset-1">
+
+          <div class="table-responsive">
+            <table class="table">
+
+              <tbody>
+                <tr>
+                  <td><strong>Title:</strong></td>
+                  <td><%= @game.title %></td>
+                </tr>
+                <tr>
+                  <td><strong>Developer:</strong></td>
+                  <td><%= @game.developer %></td>
+                </tr>
+                <tr>
+                  <td><strong>Publisher:</strong></td>
+                  <td><%= @game.publisher %></td>
+                </tr>
+                <tr>
+                  <td><strong>Genre:</strong></td>
+                  <td><%= @game.genre %></td>
+                </tr>
+                <tr>
+                  <td><strong>Platform Played On:</strong></td>
+                  <td><%= @game.played_on %></td>
+                </tr>
+                <tr>
+                  <td><strong>Year:</strong></td>
+                  <td><%= @game.year %></td>
+                </tr>
+                <tr>
+                  <td><strong>Rating:</strong></td>
+                  <td><%= @game.rating %></td>
+                </tr>
+                <tr>
+                  <td><strong>Review:</strong></td>
+                  <td><%= sanitize @game.review %></td>
+                </tr>
+              </tbody>
+            </div>
+      </div>
+    </div>
+  </div>

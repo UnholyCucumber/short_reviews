@@ -1,0 +1,42 @@
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag @book.image %>
+      </div>
+        <div class="col-md-7 col-md-offset-1">
+
+          <div class="table-responsive">
+            <table class="table">
+
+              <tbody>
+                <tr>
+                  <td><strong>Title:</strong></td>
+                  <td><%= @book.title %></td>
+                </tr>
+                <tr>
+                  <td><strong>Author:</strong></td>
+                  <td><%= @book.author %></td>
+                </tr>
+                <tr>
+                  <td><strong>Genre:</strong></td>
+                  <td><%= @book.genre %></td>
+                </tr>
+                <tr>
+                  <td><strong>Language Read:</strong></td>
+                  <td><%= @book.language %></td>
+                </tr>
+                <tr>
+                  <td><strong>Rating:</strong></td>
+                  <td><%= @book.rating %></td>
+                </tr>
+                <tr>
+                  <td><strong>Review:</strong></td>
+                  <td><%= sanitize @book.review %></td>
+                </tr>
+              </tbody>
+            </div>
+      </div>
+    </div>
+  </div>

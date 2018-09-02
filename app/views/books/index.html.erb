@@ -1,0 +1,57 @@
+<style>
+.thumbnail {
+  padding: 0;
+  border: 0;
+}
+
+.thumbnail{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+</style>
+
+<h1 id="Films&TV">Films & TV</h1>
+<div class="row">
+    <% @films.each do |film| %>
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <%= link_to  (image_tag film.image.url(), class: 'image'), film %>
+        </div>
+      </div>
+    <% end %>
+</div>
+
+<h1 id="Books">Books</h1>
+<div class="row">
+    <% @books.each do |book| %>
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <%= link_to  (image_tag book.image.url(), class: 'image'), book %>
+        </div>
+      </div>
+    <% end %>
+</div>
+
+<h1 id="Games">Games</h1>
+<div class="row">
+    <% @games.each do |game| %>
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <%= link_to  (image_tag game.image.url(), class: 'image'), game %>
+        </div>
+      </div>
+    <% end %>
+</div>
+
+<h1 id="Music">Music</h1>
+<div class="row">
+    <% @musics.each do |music| %>
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <%= link_to  (image_tag music.image.url(), class: 'image'), music %>
+        </div>
+      </div>
+    <% end %>
+</div>

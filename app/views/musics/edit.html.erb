@@ -1,0 +1,7 @@
+<h1>Editing Music</h1>
+
+<%= render 'form', music: @music %>
+
+<%= link_to 'Show', @music %> |
+<%= link_to 'Back', musics_path %>
+<%= link_to 'Destroy', @music, method: :delete, data: { confirm: 'Are you sure?' } %>
